@@ -87,7 +87,7 @@ def stat(label, value):
 @st.cache_data(ttl=600)   # reload from the database at most every 10 minutes
 def load_table(table):
     from supabase import create_client
-    db = create_client(st.secrets[https://xggfdiegywgvljsbwycx.supabase.co], st.secrets[sb_publishable_-kGIHGMRTVGb_c_dCq_qLA_EoZg_U0V])
+    db = create_client(st.secrets["https://xggfdiegywgvljsbwycx.supabase.co"], st.secrets["sb_publishable_-kGIHGMRTVGb_c_dCq_qLA_EoZg_U0V"])
     rows, start = [], 0
     while True:
         part = db.table(table).select("*").order("id").range(start, start + 999).execute().data
