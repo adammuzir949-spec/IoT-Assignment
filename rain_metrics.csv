@@ -1,0 +1,4 @@
+horizon,hits,misses,false_alarms,correct_dry,hit_rate,false_alarm_ratio,accuracy
+0-24h,2483,997,638,2211,0.71,0.2,0.74
+24-48h,2139,1015,846,1825,0.68,0.28,0.68
+48-72h,1885,877,721,1842,0.68,0.28,0.7
